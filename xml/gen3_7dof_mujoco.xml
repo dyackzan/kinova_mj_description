@@ -1,5 +1,5 @@
 <mujoco model="gen3">
-  <compiler angle="radian" meshdir="../meshes"/>
+  <compiler angle="radian" meshdir="../assets"/>
 
   <option integrator="implicitfast"/>
 
@@ -73,28 +73,28 @@
   </default>
 
   <asset>
-    <mesh name="base_link" file="base_link.STL"/>
-    <mesh name="shoulder_link" file="shoulder_link.STL"/>
-    <mesh name="half_arm_1_link" file="half_arm_1_link.STL"/>
-    <mesh name="half_arm_2_link" file="half_arm_2_link.STL"/>
-    <mesh name="forearm_link" file="forearm_link.STL"/>
-    <mesh name="spherical_wrist_1_link" file="spherical_wrist_1_link.STL"/>
-    <mesh name="spherical_wrist_2_link" file="spherical_wrist_2_link.STL"/>
-    <mesh name="bracelet_no_vision_link" file="bracelet_no_vision_link.STL"/>
+    <mesh name="base_link" file="kinova/collision/base_link.STL"/>
+    <mesh name="shoulder_link" file="kinova/collision/shoulder_link.STL"/>
+    <mesh name="half_arm_1_link" file="kinova/collision/half_arm_1_link.STL"/>
+    <mesh name="half_arm_2_link" file="kinova/collision/half_arm_2_link.STL"/>
+    <mesh name="forearm_link" file="kinova/collision/forearm_link.STL"/>
+    <mesh name="spherical_wrist_1_link" file="kinova/collision/spherical_wrist_1_link.STL"/>
+    <mesh name="spherical_wrist_2_link" file="kinova/collision/spherical_wrist_2_link.STL"/>
+    <mesh name="bracelet_no_vision_link" file="kinova/collision/bracelet_no_vision_link.STL"/>
     <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
     <material name="metal" rgba="0.58 0.58 0.58 1"/>
     <material name="silicone" rgba="0.1882 0.1882 0.1882 1"/>
     <material name="gray" rgba="0.4627 0.4627 0.4627 1"/>
     <material name="black" rgba="0.149 0.149 0.149 1"/>
 
-    <mesh class="2f85" file="robotiq_2f85/base_mount.stl"/>
-    <mesh class="2f85" file="robotiq_2f85/base.stl"/>
-    <mesh class="2f85" file="robotiq_2f85/driver.stl"/>
-    <mesh class="2f85" file="robotiq_2f85/coupler.stl"/>
-    <mesh class="2f85" file="robotiq_2f85/follower.stl"/>
-    <mesh class="2f85" file="robotiq_2f85/pad.stl"/>
-    <mesh class="2f85" file="robotiq_2f85/silicone_pad.stl"/>
-    <mesh class="2f85" file="robotiq_2f85/spring_link.stl"/>
+    <mesh class="2f85" file="robotiq_2f85/collision/base_mount.stl"/>
+    <mesh class="2f85" file="robotiq_2f85/collision/base.stl"/>
+    <mesh class="2f85" file="robotiq_2f85/collision/driver.stl"/>
+    <mesh class="2f85" file="robotiq_2f85/collision/coupler.stl"/>
+    <mesh class="2f85" file="robotiq_2f85/collision/follower.stl"/>
+    <mesh class="2f85" file="robotiq_2f85/collision/pad.stl"/>
+    <mesh class="2f85" file="robotiq_2f85/collision/silicone_pad.stl"/>
+    <mesh class="2f85" file="robotiq_2f85/collision/spring_link.stl"/>
   </asset>
 
   <contact>
